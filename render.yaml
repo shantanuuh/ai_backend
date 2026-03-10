@@ -1,0 +1,15 @@
+services:
+  # A Docker-based web service
+  - type: web
+    name: ai-voice-websocket
+    env: docker
+    region: singapore # Change to ohio or frankfurt if closer to your Android gateway
+    plan: free # Change to standard/pro for better latency
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: LOG_LEVEL
+        value: info
+      - key: SARVAM_API_KEY # Please add this manually in the Render Dashboard securely!
+        sync: false
