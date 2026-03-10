@@ -1,0 +1,14 @@
+{
+  "name": "ai-voice-system",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5"
+  }
+}
